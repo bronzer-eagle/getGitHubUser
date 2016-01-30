@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <title>Get GitHub User</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="leftColumn">
+        <h2>Таблиця адрес репозиторіїв:</h2>
+        <form id='formData'>
+            <table id='addressTable'>
+                <tr>
+                    <td class="number">
+                        1
+                    </td>
+                    <td>
+                        <input name="address" type="url" class="address" placeholder="Введіть адресу репозиторію"
+                               onblur="createNewinput()">
+                    </td>
+                </tr>
+            </table>
+            <button>
+                СТАРТ!
+            </button>
+        </form>
+
+    </div>
+    <div class="rightColumn">
+        <h2>Таблиця імен та пошт користувачів:</h2>
+        Фільтрувати інформацію:
+        <select onchange="selectedValue()">
+            <option></option>
+            <option>Показати всі</option>
+            <option>Показати найбільш повторюваний E-mail</option>
+        </select>
+        <table id='responseTable'>
+            <tr>
+                <td>E-mail</td>
+                <td>Name</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src='js/main.js'></script>
+</body>
+</html>

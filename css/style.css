@@ -1,0 +1,93 @@
+body {
+    padding: 10px;
+    background: #9d9687;
+    font-family: Calibri;
+    color: #392129;
+}
+
+body > .wrapper {
+    width: 1300px;    
+    margin: 0 auto;
+}
+
+body > .wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+body > .wrapper > div {
+    position: relative;
+    width: 600px;
+    float: left;
+    height: auto;
+    box-shadow: 5px 5px 5px 1px #8a8374;
+    padding: 10px 10px;
+    background: #d7c770;
+    text-align: center;
+}
+
+body > .wrapper > .rightColumn {
+    float: right;
+}
+
+h2 {
+    margin: 0 auto 10px auto;
+    color: #392129;
+    text-align: center;
+    text-shadow: 2px 2px 2px #9d8d4f;
+}
+
+table {
+    margin: 0 auto;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+input[type = 'url'] {
+    width: 390px;
+    height: 20px;
+    padding: 5px;
+}
+
+button {
+    margin: 10px auto;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background: #86534e;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-shadow: 2px 2px 2px #633531;
+    box-shadow: 0 0 2px 1px #9d8d4f;
+}
+
+button:active {
+    background: #6b3935;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+td {
+    box-shadow: 2px 2px 2px 1px #9d8d4f;
+    background: white;
+}
+
+#addressTable td:first-child, #responseTable td {
+    padding: 5px;
+}
+
+select {
+    width: 300px;
+}
